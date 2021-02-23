@@ -25,7 +25,7 @@ def stop():
     pygame.mixer.music.stop()
 
 
-with open("ethicalgame3.txt") as fp:
+with open("ethicalgame.txt") as fp:
     for line in fp:
         if "ID:" in line:
             id.append(line.split(':')[1].replace("\n", ""))
