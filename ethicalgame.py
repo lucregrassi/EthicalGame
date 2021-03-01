@@ -1,6 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 import pygame
+import time
 
 timeout = 120
 
@@ -19,10 +20,6 @@ next_id = "0"
 running = True
 prev_image = ""
 prev_song = ""
-
-
-def stop():
-    pygame.mixer.music.stop()
 
 
 with open("ethicalgame_it.txt") as fp:
@@ -63,12 +60,16 @@ text = ""
 bottomframe = Frame(root)
 bottomframe.pack(side=BOTTOM)
 
+times = []
+tot_time = 0.0
 while ok:
+    start = time.time()
     # try:
     #     pygame.mixer.music.load("music/" + str(id[state]) + ".mp3")
     #     pygame.mixer.music.play(loops=0)
     # except:
     #    pass
+    print(tt[state])
     text = text + tt[state] + "\n\n"
     text_widget = Text(root, height=15, width=65, font=(None, 18), wrap=WORD)
     scroll_bar = Scrollbar(root, orient='vertical', command=text_widget.yview)
@@ -131,15 +132,21 @@ while ok:
                              font=(None, 16), bg="#62cf38")
     continue_button.config(height=2, width=5)
     continue_button.pack(side=TOP, pady=40)
-    print("Waiting for the button to be clicked")
+
+    # print("Waiting for the button to be clicked")
     continue_button.wait_variable(var)
+    end = time.time()
+    elapsed_time = end - start
+    times.append((id[state], elapsed_time))
+    tot_time = tot_time + elapsed_time
     value = r.get()
     print(r.get())
-    print("Button clicked!")
+    # print("Button clicked!")
+
+    # pygame.mixer.music.stop()
 
     next_id = next[state][int(value)]
     my_score = my_score + int(score[state][int(value)])
-
 
     for i in range(len(id)):
         if next_id == id[i]:
@@ -156,8 +163,10 @@ while ok:
 finished_msg = "Gioco completato! Il tuo punteggio è: " + str(my_score)
 finished = Label(bottomframe, text=finished_msg, font=(None, 16))
 finished.pack(padx=20, pady=(40, 10))
-print(finished_msg)
+print("\n" + finished_msg + "\n")
 
+print("Time for each state: ", times)
+print("Total time: ", tot_time)
 quit_button = Button(bottomframe, text="Esci", command=root.quit, font=(None, 16), bg="#62cf38")
 quit_button.config(height=2, width=5)
 quit_button.pack(padx=10, pady=20)
