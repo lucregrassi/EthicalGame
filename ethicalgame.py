@@ -62,23 +62,27 @@ bottomframe.pack(side=BOTTOM)
 
 times = []
 tot_time = 0.0
+line = 1.0
 while ok:
     start = time.time()
-    # try:
-    #     pygame.mixer.music.load("music/" + str(id[state]) + ".mp3")
-    #     pygame.mixer.music.play(loops=0)
-    # except:
-    #    pass
+    try:
+        pygame.mixer.music.load("music/" + str(id[state]) + ".mp3")
+        pygame.mixer.music.play(loops=1)
+    except:
+        pass
     print(tt[state])
-    text = text + tt[state] + "\n\n"
-    text_widget = Text(root, height=15, width=65, font=(None, 18), wrap=WORD)
+    if text != "":
+        text = text + "\n*******************************************************************************" \
+               "**********\n" + tt[state]
+    else:
+        text = text + tt[state]
+    text_widget = Text(root, height=18, width=65, font=(None, 18), wrap=WORD)
     scroll_bar = Scrollbar(root, orient='vertical', command=text_widget.yview)
     scroll_bar.pack(side=LEFT, anchor=NW, fill=Y, pady=10)
     text_widget.insert(END, text)
     text_widget.config(state=DISABLED)
     text_widget.yview_pickplace("end")
-    text_widget.pack(side=LEFT, anchor=NW, pady=(20, 40))
-
+    text_widget.pack(side=LEFT, anchor=NW, padx=(20, 20), pady=(30, 40))
     try:
         original_image = Image.open("images/" + id[state] + ".jpg")
         prev_image = Image.open("images/" + id[state] + ".jpg")
@@ -87,7 +91,7 @@ while ok:
     resized_image = original_image.resize((520, 300), Image.ANTIALIAS)
     final_image = ImageTk.PhotoImage(resized_image)
     img_label = Label(root, image=final_image)
-    img_label.pack(side=LEFT, anchor=NE, pady=(25, 0), padx=(10, 20))
+    img_label.pack(side=LEFT, anchor=NE, pady=(50, 0), padx=(0, 30))
 
     # print(tt[state])
 
@@ -108,7 +112,7 @@ while ok:
             split_opt = ""
             j = 0
             for k in range(len(option[state][i])):
-                if k != 0 and k % 55 == 0:
+                if k != 0 and k % 150 == 0:
                     j = k
                     count = 0
                     while option[state][i][j] != " " and j < len(option[state][i])-1:
@@ -143,7 +147,7 @@ while ok:
     print(r.get())
     # print("Button clicked!")
 
-    # pygame.mixer.music.stop()
+    pygame.mixer.music.stop()
 
     next_id = next[state][int(value)]
     my_score = my_score + int(score[state][int(value)])
