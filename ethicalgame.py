@@ -22,7 +22,7 @@ prev_image = ""
 prev_song = ""
 
 
-with open("ethicalgame_it.txt") as fp:
+with open("ethicalgame_en.txt") as fp:
     for line in fp:
         if "ID:" in line:
             id.append(line.split(":")[1].replace("\n", ""))
@@ -70,19 +70,43 @@ first_time = True
 
 while ok:
     if first_time:
-        title = "Simulazione Interattiva Testuale – Terremoto a Namila"
-        intro_widget = Label(top_frame, text=title, font=(None, 20, 'bold'))
+        title_it = "Simulazione Interattiva Testuale – Terremoto a Namila"
+        title_en = "Interactive Text Simulation - Earthquake in Namila"
+        intro_widget = Label(top_frame, text=title_en, font=(None, 20, 'bold'))
         intro_widget.pack(padx=20, pady=(80, 10))
 
-        guide = "La simulazione interattiva testuale che ti appresti a leggere è costituita da brevi testi accompagnati da domande. L’obiettivo di questa simulazione è di incoraggiare chi si occupa a vario titolo di droni di soccorso, in particolare nel contesto di disastri o calamità, a riflettere sulle questioni etiche che possono essere legate al loro utilizzo.  I problemi che sono posti sono problemi reali e concreti che sono stati identificati nella letteratura.\n\n" \
-                "Alcune indicazioni utili:\n" \
-                "1. La storia si svolge in maniera diversa a seconda delle risposte che dai alle domande.\n" \
-                "2. Il testo nuovo è riportato ogni volta sotto la riga tratteggiata.\n" \
-                "3. Puoi navigare all’interno del testo utilizzando la scroll-bar.\n" \
-                "4. Una volta che hai cliccato su “Continua” non puoi più modificare la tua risposta né ritornare al testo che precede quella domanda.\n" \
-                "5. Non ci sono risposte giuste o sbagliate. Ci sono invece risposte migliori, cui viene attribuito un punteggio di 0, e risposte peggiori, cui viene attribuito un punteggio di -2 o -4. Il miglior punteggio possibile è quindi 0, quello peggiore -12."
-        txt_widg = Text(top_frame, height=16, width=65, font=(None, 18), wrap=WORD)
-        txt_widg.insert(END, guide)
+        guide_en = "The interactive text simulation you are about to read includes short texts followed by questions." \
+                   "The aim of this simulation is to encourage those who work with search and rescue drones in disaster" \
+                   "operations, whether researchers or pilots, to reflect on the ethical issues that can emerge in " \
+                   "connection with their deployment. The problems presented are actual issues that are described in " \
+                   "the literature.\n\n" \
+                   "Some useful information:\n" \
+                   "1. The story unfolds differently depending on how you answer the questions.\n" \
+                   "2. New text appears under the dashed line.\n" \
+                   "3. You can navigate within the text using your cursor.\n" \
+                   "4. Once you have pressed “Continue” you can no longer change your answer nor return to the text " \
+                   "that comes before that question.\n" \
+                   "5. None of the answers are completely right or completely wrong. Some of the answers are better, " \
+                   "and will earn you a 0 score, others worse, and they will earn you either a -2 or a -4 score, " \
+                   "depending on how much worse they are. The best possible score is therefore 0, the worst is -12."
+
+        guide_it = "La simulazione interattiva testuale che ti appresti a leggere è costituita da brevi testi " \
+                   "accompagnati da domande. L’obiettivo di questa simulazione è di incoraggiare chi si occupa a vario " \
+                   "titolo di droni di soccorso, in particolare nel contesto di disastri o calamità, a riflettere " \
+                   "sulle questioni etiche che possono essere legate al loro utilizzo. Le questioni che ti verranno " \
+                   "proposte riflettono problemi reali e concreti che sono stati identificati nella letteratura.\n\n" \
+                   "Alcune indicazioni utili:\n" \
+                   "1. La storia si svolge in maniera diversa a seconda delle risposte che dai alle domande.\n" \
+                   "2. Il testo nuovo è riportato ogni volta sotto la riga tratteggiata.\n" \
+                   "3. Puoi navigare all’interno del testo utilizzando il touchpad.\n" \
+                   "4. Una volta che hai cliccato su “Continua” non puoi più modificare la tua risposta né ritornare " \
+                   "al testo che precede quella domanda.\n" \
+                   "5. Non ci sono risposte giuste o sbagliate. Ci sono invece risposte migliori, cui viene attribuito " \
+                   "un punteggio di 0, e risposte peggiori, cui viene attribuito un punteggio di -2 o -4. Il miglior " \
+                   "punteggio possibile è quindi 0, quello peggiore -12."
+
+        txt_widg = Text(top_frame, height=17, width=65, font=(None, 18), wrap=WORD)
+        txt_widg.insert(END, guide_en)
         txt_widg.config(state=DISABLED)
         txt_widg.yview_pickplace("end")
         txt_widg.pack(side=TOP, padx=(30, 20), pady=(30, 40))

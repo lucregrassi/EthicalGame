@@ -21,12 +21,12 @@ Next:C& Option: La soluzione migliore è sicuramente mettere in piedi più campi
 
 ID:B
 Type: State
-TT:Il problema del consumo delle batterie ti preoccupa, ma i piloti di droni autorizzati non sono molti; inoltre, quelli disponibili devono darsi spesso il turno durante le operazioni. Potrebbero volerci molti mesi prima di poter contare su un numero sufficiente di piloti in squadra da poter distribuire su campi base diversi, quando arrivasse il momento.
+TT:Il problema del consumo delle batterie ti preoccupa, ma decidi che lavorare sulla pianificazione dei percorsi di volo è la soluzione giusta. I piloti  di droni autorizzati non sono molti; inoltre, quelli disponibili devono darsi spesso il turno durante le operazioni. Potrebbero volerci  molti mesi prima di poter contare su un numero sufficiente di piloti in squadra da poter distribuire su campi base diversi, quando arrivasse il momento.
 Next:D1& Option: NULL& Score: 0
 
 ID:C
 Type: State
-TT:Dovrai pensare attentamente a come distribuire i tuoi piloti. Affrontare la questione dal punto di vista della pianificazione dei percorsi di volo dei droni richiederebbe di avere a disposizione e poter analizzare in anticipo informazioni sulla distribuzione di particolari caratteristiche della popolazione. Ti preoccupa la possibilità che questo sia complicato e possa ritardare le operazioni.
+TT:Decidi che la soluzione migliore sia quella di organizzare diversi campi base, valutando attentamente  come distribuire i tuoi piloti. Affrontare la questione dal punto di vista della pianificazione dei percorsi di volo dei droni richiederebbe di avere a disposizione e di poter analizzare in anticipo  informazioni sulla distribuzione di particolari caratteristiche della popolazione. Ti preoccupa la possibilità che questo sia complicato e possa ritardare le operazioni.
 Next:D1& Option: NULL& Score: 0
 
 ID:D1
@@ -36,13 +36,13 @@ Next:D2& Option: NULL& Score: 0
 
 ID:D2
 Type: State
-TT:Durante quegli incontri tecnici, quando ti veniva richiesto di presentare i droni e di spiegare il tipo di supporto che possono offrire ai soccorsi, ti sei reso conto che la reazione prevalente era scettica e dubbiosa. I rappresentanti della Croce Rossa e della Protezione Civile manifestavano ben poco entusiasmo, forse preoccupati che i droni possano costituire una minaccia ai loro compiti e al loro ruolo. Avevi pensato all’epoca che coinvolgerli in un progetto di ricerca avrebbe potrebbe essere un modo per mostrare loro i reali obiettivi del tuo lavoro e far capire quanto sia improbabile che le loro professionalità siano messe davvero a rischio dai droni. Alla fine è stato siglato un accordo tra la tua Università e la Protezione Civile che sancisce il ruolo della tua squadra nelle operazioni di soccorso, ma non è mai stato chiarito in maniera specifica se, oltre all’autorizzazione dell’ENAC, sia necessaria o auspicabile una comunicazione alle autorità locali durante l’emergenza.
+TT:Durante quegli incontri tecnici, quando ti veniva richiesto di presentare i droni e di spiegare il tipo di supporto che possono offrire ai soccorsi, ti sei reso conto che la reazione prevalente era scettica e dubbiosa. I rappresentanti della Croce Rossa e della Protezione Civile manifestavano ben poco entusiasmo, forse preoccupati che i droni possano costituire una minaccia ai compiti o al ruolo dei soccorritori. Avevi pensato all’epoca che coinvolgerli in un progetto di ricerca avrebbe potrebbe essere un modo per mostrare loro i reali obiettivi del tuo lavoro e far capire quanto sia improbabile che le loro professionalità siano messe davvero a rischio dai droni. Alla fine è stato siglato un accordo tra la tua Università e la Protezione Civile che sancisce il ruolo della tua squadra nelle operazioni di soccorso, ma non è mai stato chiarito in maniera specifica se, oltre all’autorizzazione dell’ENAC, sia necessaria o auspicabile una comunicazione alle autorità locali durante l’emergenza.
 Next:2& Option: NULL& Score: 0
 
 ID:2
 Type: Question
 TT:Ti chiedi se sia meglio interrompere la Sindaco in questo momento, nonostante il fatto che ti stia chiaramente ignorando. 
-Next:E& Option: No, hai già le autorizzazioni formali necessarie ed interromperla ora non farà altro che infastidirla. Faresti meglio a continuare con le operazioni.& Score: -4
+Next:E& Option: No, hai già le autorizzazioni formali necessarie ed interromperla ora non farà altro che infastidirla.& Score: -4
 Next:E& Option: Decidi di aspettare e di parlarle quando avrà finito di discutere con i soccorritori; devi assicurarti di informarla ma interromperla ora non è una buona idea.& Score: -2
 Next:O& Option: Si, bisogna che la interrompi; anche se hai già le autorizzazioni necessarie è importante che le autorità locali siano informate da subito.& Score: 0
 
@@ -53,7 +53,7 @@ Next:F& Option: NULL& Score: 0
 
 ID:F
 Type: State
-TT:Cominci a programmare le attività da intraprendere quando il flusso dei dati dai droni inizierà ad arrivare, ma vieni interrotto da uno dei più esperti fra i tuoi piloti; ti informa che la lama di un rotore e forse altre parti di un drone si sono danneggiate in una collisione. Questo tipo di incidente è tipicamente causato da difficoltà nell’atterraggio. È una questione su cui state lavorando da tempo ma che ancora non siete stati in grado di risolvere. Probabilmente è dovuta ai problemi di usabilità che ben conosci. Sebbene le missioni in volo non durino tipicamente più di 20 minuti sai che lo sforzo cognitivo per i piloti è pesante e questo tipo di evento potrebbe essere associato proprio alle conseguenze di questo stress. Ti chiedi se sia necessario informare le autorità locali dell’incidente.
+TT:Ben presto il flusso di dati dai droni inizia ad arrivare e le operazioni si svolgono senza particolari problemi. Passate alcune ore, uno dei più esperti fra i tuoi piloti ti informa che la lama di un rotore e forse altre parti di un drone si sono danneggiate in una collisione. Questo tipo di incidente è tipicamente causato da difficoltà nell’atterraggio. È una questione su cui state lavorando da tempo ma che ancora non siete stati in grado di risolvere. Probabilmente è dovuta ai problemi di usabilità che ben conosci. Sebbene le missioni in volo non durino tipicamente più di 20 minuti sai che lo sforzo cognitivo per i piloti è pesante e questo tipo di evento potrebbe essere associato proprio alle conseguenze di questo stress. Ti chiedi se sia necessario informare le autorità locali dell’incidente.
 Next:3& Option: NULL& Score: 0
 
 ID:3
@@ -61,7 +61,7 @@ Type: Question
 TT:Devi informare l’Assessore alla Protezione Civile?
 Next:G& Option: No, la cosa migliore da fare è tenere per sé questo tipo di difficoltà.& Score: -4
 Next:G& Option: È meglio risolvere il problema e informare l’Assessore a cose fatte.& Score: 0
-Next:K& Option: Sì, la cosa da fare è spiegargli la situazione appena possibile.& Score: -2
+Next:K& Option: Sì, la cosa da fare è spiegargli la situazione appena possibile, anche se la cosa non farà una buona impressione.& Score: -2
 
 ID:G
 Type: State
@@ -76,16 +76,16 @@ Next:I& Option: Dici ai piloti di far rientrare i droni, ma decidi di non lascia
 
 ID:H
 Type: State
-TT:Hai fatto un paio di errori di valutazione, questo renderà ancora più complesso stabilire un rapporto di fiducia con le autorità locali e guadagnarti la reputazione di partner affidabile.
+TT:Hai fatto un paio di errori di valutazione, questo renderà più complesso stabilire un rapporto di fiducia con le autorità locali e guadagnarti la reputazione di partner affidabile.
 
 ID:I
 Type: State
-TT:Forse potete rendervi utili in qualche altro modo. E poi non puoi andartene senza aver parlato direttamente con l’Assessore. 
+TT:Forse potete rendervi utili in qualche altro modo. E poi non puoi andartene senza parlare direttamente con l’Assessore.
 Next:J& Option: NULL& Score: 0
 
 ID:J
 Type: State
-TT:Ti rendi conto che le tue scelte sbagliate hanno reso tutto più complicato. Pensi anche, però, che le decisioni che riguardano il tipo di informazioni che vanno condivise e i tempi con cui questa condivisione deve avvenire non possono essere prese sul campo, durante le operazioni, ma devono essere specificate in protocolli prestabiliti. Decidi di approcciare l’Assessore non appena la situazione lo consentirà per vedere se tu e la tua squadra potete ancora rendervi utili in qualche modo. Quando finalmente riesci a parlargli, cerchi di fargli capire la tua posizione. È contrariato dal tuo comportamento precedente ma sa anche che i droni possono fornire un aiuto concreto, e la situazione è tale che ogni aiuto va sfruttato. Scuotendo la testa, ti dice di procedere con i droni che ti rimangono senza perdere altro tempo. Mentre si allontana, ti ricorda che non tollererà altre mancanze.
+TT:Ti rendi conto che le tue scelte sbagliate hanno reso tutto più complicato. Pensi anche, però, che le decisioni che riguardano il tipo di informazioni che vanno condivise e i tempi con cui questa condivisione deve avvenire non possono essere prese sul campo, durante le operazioni, ma devono essere specificate in protocolli prestabiliti. Decidi di approcciare l’Assessore non appena la situazione lo consentirà per vedere se tu e la tua squadra potete ancora rendervi utili in qualche modo. Quando finalmente riesci a parlargli, cerchi di fargli capire la tua posizione. E’ contrariato dal tuo comportamento precedente ma sa anche che i droni possono fornire un aiuto concreto, e la situazione è tale che ogni aiuto va sfruttato. Scuotendo la testa, ti dice di procedere con i droni che ti rimangono senza perdere altro tempo. Mentre si allontana, ti ricorda di tenerlo aggiornato, altre mancanze non verranno tollerate.
 Next:L& Option: NULL& Score: 0
 
 ID:K
@@ -106,14 +106,12 @@ Next:N& Option: È chiaro che dovrai fare a meno del drone danneggiato.& Score: 
 
 ID:M
 Type: State
-TT:Dopo aver valutato la fattibilità della riparazione con i pezzi di ricambio che avete a disposizione e considerato il tempo necessario, decidi di tentare tu stesso di aggiustare il drone e dopo poco ti rendi conto che per fortuna la cosa sarà risolvibile in tempi ragionevoli. 
-Sistemati i problemi tecnici, ti rendi conto che nell’ultima conversazione con l’Assessore ti sei dimenticato di dirgli una cosa importante, bisogna informare la popolazione del fatto che i droni parteciperanno alle operazioni di soccorso. Il coinvolgimento della popolazione locale è fondamentale per prevenire che circolino disinformazione e voci infondate e per garantire che vengano soddisfatti al meglio i bisogni della comunità.
+TT:Dopo aver valutato la fattibilità della riparazione con i pezzi di ricambio che avete a disposizione e considerato il tempo necessario, decidi di tentare tu stesso di aggiustare il drone e dopo poco ti rendi conto che per fortuna la cosa sarà risolvibile in tempi ragionevoli. Sistemati i problemi tecnici, ti rendi conto che nell’ultima conversazione con l’Assessore ti sei dimenticato di dirgli una cosa importante, bisogna informare la popolazione del fatto che i droni parteciperanno alle operazioni di soccorso. Il coinvolgimento della popolazione locale è fondamentale per prevenire che circolino disinformazione e voci infondate e per garantire che vengano soddisfatti al meglio i bisogni della comunità.
 Next:6& Option: NULL& Score: 0
 
 ID:N
 Type: State
-TT:Dopo aver valutato la fattibilità della riparazione con i pezzi di ricambio che avete a disposizione, considerato il tempo necessario e valutato quanto è probabile che la riparazione tenga, decidi di fare a meno del drone danneggiato, non hai altre opzioni.
-Sistemato il problema tecnico, ti viene in mente che nell’ultima conversazione con l’Assessore ti sei dimenticato di dirgli una cosa importante, bisogna informare la popolazione del fatto che i droni parteciperanno alle operazioni di soccorso. Il coinvolgimento della popolazione locale è fondamentale per prevenire che circolino disinformazione e voci infondate e per garantire che vengano soddisfatti al meglio i bisogni della comunità.
+TT:Dopo aver valutato la fattibilità della riparazione con i pezzi di ricambio che avete a disposizione, considerato il tempo necessario e valutato quanto è probabile che la riparazione tenga, decidi di fare a meno del drone danneggiato, non hai altre opzioni. Sistemato il problema tecnico, ti viene in mente che nell’ultima conversazione con l’Assessore ti sei dimenticato di dirgli una cosa importante, bisogna informare la popolazione del fatto che i droni parteciperanno alle operazioni di soccorso. Il coinvolgimento della popolazione locale è fondamentale per prevenire che circolino disinformazione e voci infondate e per garantire che vengano soddisfatti al meglio i bisogni della comunità.
 Next:6& Option: NULL& Score: 0
 
 ID:O
@@ -126,7 +124,7 @@ Type: Question
 TT:Ti chiedi se raggiungere velocemente l’Assessore per fargli subito presente la cosa, anche se ti rendi conto che in questo momento ha fin troppe cose cui dedicarsi.
 Next:P& Option: No, l’Assessore ha il ruolo e le competenze per capire quali sono i bisogni e le priorità dei cittadini. & Score: -4
 Next:P& Option: Informare e coinvolgere la cittadinanza è importante ma questa conversazione non è urgente.& Score: -2
-Next:R& Option: In quanto esperto di droni spetta a te sollevare questo tipo di problemi.& Score: 0
+Next:R1& Option: In quanto esperto di droni spetta a te sollevare questo tipo di problemi.& Score: 0
 
 ID:P
 Type: State
@@ -139,20 +137,21 @@ TT:Alla Sindaco arrivano lamentele sui droni da parte di diversi rappresentanti 
 
 ID:R1
 Type: State
-TT:Chiedi all’Assessore di metterti in contatto con l’Ufficio Stampa del Comune per chiedere che la sindaco faccia una dichiarazione e venga rilasciato un comunicato in cui si annunciano e si descrivono brevemente le operazioni con i droni. Suggerisci poi che venga organizzato un incontro pubblico che coinvolga vari rappresentanti della società civile. Nell’incontro presenterai il vostro lavoro e farai una breve dimostrazione. L’Ufficio Stampa risponde subito alla tua telefonata, confermandoti che rilascerà un comunicato e organizzerà l’incontro pubblico. Ti assicura anche che farà partire una campagna di informazione capillare per la popolazione attraverso il sistema di allerta via SMS. A breve verranno coinvolte le forze di polizia che daranno il loro supporto per la sicurezza e la diffusione delle informazioni.
+TT:Chiedi all’Assessore di metterti in contatto con l’Ufficio Stampa del Comune per chiedere che la sindaco faccia una dichiarazione e venga rilasciato un comunicato in cui si annunciano e si descrivono brevemente le operazioni con i droni. Suggerisci poi che venga organizzato un incontro pubblico che coinvolga vari rappresentanti della società civile. Nell’incontro presenterai il vostro lavoro e farai una breve dimostrazione. L’Ufficio Stampa risponde subito alla tua telefonata, confermandoti che rilascerà un comunicato e organizzerà l’incontro pubblico. Ti assicura anche che farà partire una campagna di informazione capillare per la popolazione attraverso il sistema di allerta via SMS.
 Next:R2& Option: NULL& Score: 0
 
 ID:R2
 Type: State
-TT:Nella fretta di spiegare tutto all’Ufficio Stampa ti sei dimenticato di sottolineare un punto, bisognerebbe che nel comunicato si evitassero sensazionalismi e che le informazioni trasmesse ai media dessero un’idea corretta dell’effettivo potenziale dei droni. Però, a pensarci bene, questa è la prima volta che il tuo lavoro viene presentato sui giornali nazionali; questo tipo di visibilità non capita tutti i giorni ed è un’occasione importante per far conoscere il tuo team e l’utilità dei droni nei soccorsi. Ma sì, se anche i toni del comunicato stampa fossero un po’ troppo entusiasti non sarebbe poi un problema così grave...
+TT:C’è un punto particolarmente delicato che devi far capire agli addetti stampa. Nel comunicato andranno evitati sensazionalismi e le informazioni trasmesse ai media dovranno dare un’idea corretta dell’effettivo potenziale dei droni. Però, a pensarci bene, questa è la prima volta che il tuo lavoro viene presentato sui giornali nazionali; questo tipo di visibilità non capita tutti i giorni ed è un’occasione importante per far conoscere il tuo team e l’utilità dei droni nei soccorsi. Ma sì, forse se anche i toni del comunicato stampa fossero un po’ troppo enfatici i non sarebbe poi così grave.
 Next:7& Option: NULL& Score: 0
 
 ID:7
 Type:Question
-TT:Alla fine sei combattuto sul da farsi: richiami l’Ufficio Stampa per chiarire la cosa o lasci che le cose seguano il loro corso? 
-NextS& Option: Decidi di non richiamare l’Ufficio Stampa, li hai già informati di quello che i droni possono e non possono fare& Score: -4
-Next:S& Option: Richiami l’Ufficio Stampa, spiegando di evitare sensazionalismi & Score: -4 
-Next:W& Option: Richiami l’Ufficio Stampa, spiegando chiaramente che è fondamentale evitare ogni sensazionalismo e che anzi i limiti dei droni vanno menzionati.& Score: 0
+TT: Alla fine sei combattuto sul da farsi: dici chiaramente all’ l’Ufficio Stampa di evitare entusiasmi eccessivi  sulle operazioni con i droni?
+Next:S& Option: Decidi di non menzionare la questione.& Score: -4
+Next:S& Option: Chiedi all’Ufficio Stampa di evitare entusiasmi eccessivi.& Score: -4
+Next:W& Option: Spieghi che è importante spiegare il potenziale ma anche i limiti dei droni.& Score: 0
+
 
 ID:S
 Type: State

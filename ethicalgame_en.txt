@@ -1,159 +1,188 @@
-ID:A
+ID:A1
 Type: State
-TT:A powerful earthquake has hit the island of Namila, followed by a devastating tidal wave. Many of the island's coastal towns have been affected. Alerted by the National Civil Protection (NCP) system, you and the members of your University SAR UAV team prepare to leave for the closest disaster site. When you arrive there a short while later, you find a morass of broken buildings, piled cars, and splintered debris. Where once were streets, houses and squares, now lie water-inundated lagoons filled with hazardous material. Mobility is extremely limited. Conditions are harsh; it is cold, and you only have a few hours of light left. There is rubble everywhere, walking will be a challenge. You pull up your truck to a roadblock of over-turned cars. Other search teams have already arrived; they tell you that large numbers of victims are trapped in some of the buildings surrounding the main town square. While most of your team are gearing up and preparing equipment, you and two other researchers/operators start pulling your small quadcopter UAVs out from the back of your truck. The UAVs can fly up to one hour and survey as many as four square kilometers per trip. You plan to use them to scan busted buildings and piles of rubble with visible light, infrared, multispectral, and hyperspectral sensors. The UAVs will then relay those data and images to the NCP monitoring center, so response teams can pinpoint, then rush to save, anyone in need. This is just the second time you have been directly contacted by the NCP. You expect to provide precious support but know that the system still has usability problems. You are also aware of another issue, something that has been bothering since you first realized it. Where you locate your base station and how you plan the UAVs' paths will determine the kind of people the UAVs will be able to help. Now, for instance, your base will be right next to the main square in the center of the town; you are not sure, but you suppose that must be one of Namila's wealthiest neighborhoods. It is also where most of the University buildings are, so the UAVs' planned paths will probably run through areas biased towards richer, younger populations compared to the rest of the city.  Statistically, these are not the people whose livelihoods will be most at risk. You had put off thinking about it but have a couple of potential solutions in mind. Clearly this is not the time to implement anything, but the issue will no doubt come up and needs to be dealt with at some point. 
+TT:A powerful earthquake hit the town of Namila a few hours ago. Most of the town's old center and of its most densely populated neighborhoods have been devastated. Alerted by the Civil Protection (CP) system, you and the members of your University search and rescue (SAR) Unmanned Air Vehicles (UAV) team prepare to leave for the disaster site. When you arrive there a short while later, you find a morass of broken buildings, piled cars, and splintered debris. Mobility is extremely limited, and conditions are harsh; it is cold, and you only have a few hours of light left. As you look for a place to stop, you drive by disoriented victims, people shouting the names of those who are trapped under the rubble.
+Next:A2& Option: NULL& Score: 0
+
+ID:A2
+Type:State
+TT:You drive through the outskirts of the town, then pull up your truck to a roadblock of over-turned cars. As you get out you see that other search teams have already arrived; they tell you that large numbers of victims are trapped in some of the buildings surrounding the main town square. While most of your team members are gearing up and preparing equipment, you and two others start pulling your quadcopter UAVs out from the back of your truck. The UAVs can fly up to one hour and survey as many as four square kilometers per trip. You plan to use them to scan busted buildings and piles of rubble with visible light, infrared, multispectral, and hyperspectral sensors. The UAVs will then relay those data and images to the Civil Protection monitoring center, so response teams can pinpoint, then rush to save, anyone in need. This is just the second time you have been directly contacted by the Civil Protection. You expect to provide precious support but know that the system still has usability problems.
+Next:A3& Option: NULL& Score: 0
+
+ID:A3
+Type:State
+TT:You are also aware of another issue, something that has been bothering since you first realized it. Where you locate your base station and how you plan the UAVs' paths will determine the kind of people the UAVs will be able to help. Now, for instance, your base will be right next to the main square in the center of the town; you are not sure, but you suppose this must be one of Namila's wealthiest neighborhoods. It is also where most of the University buildings are, so the UAVs' planned paths will probably run through areas biased towards richer, younger populations compared to the rest of the city. Statistically, these are not the people whose livelihoods will be most at risk. You had put off thinking about it but have a couple of potential solutions in mind. Clearly this is not the time to implement anything, but the issue will come up and needs to be dealt with at some point.
 Next:1& Option: NULL& Score: 0
 
 ID:1
 Type: Question
-TT:What if you distributed your pilots and drones across different base stations? Or should you be thinking about planning more specifically?
+TT:What if you distributed your pilots and drones across different base stations? Or should you be thinking about path planning?
 Next:B& Option: Focusing on planning is the only viable option.& Score: 0
 Next:C& Option: Setting up multiple base stations is the way to go.& Score: 0
 
 ID:B
 Type: State
-TT:Although you have concerns about battery power consumption, trained UAV pilots are not many, and they need to rotate often during operations. It may take several months to have enough on your team to be able to allocate them across different base stations.
-Next:D& Option: NULL& Score: 0
+TT:Although you have concerns about battery power consumption, you decide that working on flight planning is the right choice. Trained, certified UAV pilots are not many, and they need to rotate often during operations. It  could  take several months to have enough on your team to be able to allocate them across different base stations, when the time comes.
+Next:D1& Option: NULL& Score: 0
 
 ID:C
 Type: State
-TT:You will have to think carefully about how to allocate your UAV pilots. Tackling the issue from the planning side would require having and analyzing information about the distribution of specific population features at the disaster site well in advance. You are concerned this would be complicated and could delay UAV deployment.
-Next:D& Option: NULL& Score: 0
+TT:You decide that setting up multiple bases is the way to go, although this means having to think carefully about how to allocate your UAV pilots. Tackling the issue from the planning side would require having and analyzing information about the distribution of specific population features at the disaster site in advance. That would probably not always be straightforward and could delay UAV deployment.
+Next:D1& Option: NULL& Score: 0
 
-ID:D
+ID:D1
 Type: State
-TT:You set the question aside for the time being, and as you stand next to your truck, an NCP car pulls up. A woman steps out, she is the town Mayor. She walks towards a group of local officials and starts discussing how to coordinate the rescue efforts. Suddenly a man arrives, shouting that the school is full of children; apparently about sixty kids and three teachers are trapped underneath what is left of an auditorium nearby.  You try to get the Mayor's attention to discuss deploying the UAVs. You were introduced to her at meetings organized by the NCP and are almost sure she has recognized you. When you finally catch her eye, she nods and signals she has no time right now. As she continues talking to the local officials, you consider what to do.  The truth of the matter is, at those meetings, when you were asked to present the UAVs and explain what kind of help they can offer, you were met with quite a bit of skepticism. You don't totally understand why the Mayors and SAR specialists there were so resistant, given the obvious advantages of being able to use the UAVs in hazardous environments. Ultimately, an agreement was reached between your University and the NCP regarding your team's role within future SAR operations, but it was never really clarified at what point during operations you would need the local authorities' authorization to proceed with your missions.
+TT:You set the question aside for the time being, and as you stand next to your truck, a Civil Protection  car pulls up. A woman and a man step out, you know they are the town Mayor and the local Head of the Civil Protection. r. The woman looks around quickly, sees  a group of Red Cross officers and, with the Head of Civil Protection, starts walking in their direction. You follow them, you need to discuss your team’s operations. As you approach them you hear that they are starting to discuss  how to coordinate the rescue efforts. Suddenly, you see a man running towards you. When he stops, as he catches his breath, he says that the auditorium is full of children. Apparently about thirty  kids and three teachers are trapped underneath what is left of the school auditorium off  the main town square nearby.  In the confusion that ensues you try to get the Mayor's attention to let he know that you have all the proper authorizations in place and are ready to  deploythe UAVs. You hope that she or the Head of the Civil Protection will have recognized you from the  technical meetings organized by Civil Protection, but when  you finally catch her eye, she signals she has no time right now. As she continues talking to the local officials, you consider what to do.
+Next:D2& Option: NULL& Score: 0
+
+ID:D2
+Type: State
+TT:At those technical meetings, when you were asked to talk about the UAVs and explain what kind of help they can offer rescuers, you were met with  skepticism. Tand the Red Cross and Civil Protection officials and SAR specialists there displayed little enthusiasm. You had wondered whether their attitude had to do with concerns about drones jeopardizing  rescuers' jobs and role, now or in the future. Involving them in research would probably be a good way to show them what the actual goals of your work are and how it is highly unlikely that rescuers’ jobs will be at risk because of robots any time soon. Ultimately, an agreement was reached between your University and the Civil Protection  regarding your team's role within future search and rescue operations, but it was never really clarified whether informing local authorities before deploying the drones at the disaster site would be necessary or recommended.
 Next:2& Option: NULL& Score: 0
 
 ID:2
 Type: Question
 TT:You wonder, should you go ahead and interrupt the Mayor right now although she is clearly ignoring you?
-Next:E& Option: No, you already have formal authorization from the NCP and interrupting her at this moment will do nothing but annoy her. You had better go on and do what you need to do.& Score: -4
-Next:E& Option: You decide to wait until she has finished talking to the officials; you need to make sure she is on board but butting into her conversation now surely isn't necessary.& Score: -2
-Next:O& Option: Yes, although you will probably annoy her by stepping into the conversation, and this may hamper your relationship, it's a risk you can't help but take.& Score: 0
+Next:E& Option: No, you already have the formal authorizations required in place and interrupting her at this moment will do nothing but annoy her.& Score: -4
+Next:E& Option: You decide to wait until she has finished talking to the officials; you need to make sure she is on board but stepping  into her conversation now isn't necessary.& Score: -2
+Next:O& Option: Yes, although you will probably annoy her by interrupting her, you need to discuss the matter with the Mayor.& Score: 0
 
 ID:E
 Type: State
-TT:The deployment proceeds smoothly and soon the UAVs are aloft. You and your team have been training for months and this is the first opportunity you have to finally use the UAVs in a real-life disaster situation. Although you are confident that the data the UAVs are already collecting will prove precious, you are aware that if anything goes wrong there will be significant push-back.  At the national level, the SAR community has been hesitant about adopting new technologies, sometimes owing to negative experiences when collaborating with amateur UAV operators and due to the sometimes erratic, unpredictable behavior of the UAVs themselves. Your reputation as an UAV expert and, to some extent, the future of UAVs in SAR in your country for the foreseeable future are on the line today.
+TT:The deployment starts smoothly and soon the UAVs are aloft. You and your team have been training for months and this is the first opportunity you have to finally use the UAVs in a real-life disaster situation. Although you are confident that the data the UAVs are already collecting will prove precious, you are aware that if anything goes wrong there will be significant push-back.  At the national level, the SAR community has been hesitant about adopting new technologies, sometimes owing to negative experiences when collaborating with amateur UAV operators. You suspect that they probably also have an axe to grind because of the amount of public funding that has been recently directed towards developing UAVs instead of towards strengthening Civil Protection systems and hiring more human SAR professionals.
 Next:F& Option: NULL& Score: 0
 
 ID:F
 Type: State
-TT:As you are mulling over these thoughts, and anticipating what needs to be done when the data stream from the drones starts arriving, one of the most senior members of your team interrupts you to tell you that a rotor blade has been broken in a collision. These accidents typically occur with sloppy landings and is something you and the team have been working on but haven't entirely been able to solve. They are probably caused by issues with usability and cognitive workload. Although the flights are usually of the order of 5 minutes long, you know your pilots are under great stress and this kind of event is associated with the strain and fatigue that ensue.  The question now is, is there anyone else who ought to be informed of the accident?
+TT:Soon the data stream from the drones starts arriving and operations continue without a hitch. After a few hours,  one of the most senior members of your team tells you that a rotor blade and possibly some other part of one of the drones have been broken in a crash. These accidents typically occur with sloppy landings and is something you and the team have been working on but haven't entirely been able to solve. They are probably caused by issues with usability and cognitive workload. Although the flights are usually of the order of 5 minutes long, you know your pilots are under great stress and this kind of event is associated with the strain and fatigue that ensue. You consider whether local authorities should be informed of the accident.
 Next:3& Option: NULL& Score: 0
 
 ID:3
 Type: Question
-TT:Should the NCP and the Mayor be kept in the loop about any difficulties that arise with the UAVs?
-Next:G& Option: No, the best thing is to keep any technical issues to yourself and your team. After all, neither the NCP nor the Mayor seem to have much confidence as it is and involving them in technicalities surely can't be of any help in that direction. Plus, you haven't even asked for the Mayor's specific authorization to deploy.& Score: -4
-Next:G& Option: The best option is probably to handle the situation and let the NCP and the Mayor know about what happened after you have solved the problem. Once they see that you and your team are able to solve this kind of technical issues, they will probably take it better.& Score: -2
-Next:K& Option: Yes, being straightforward about the situation is the best way to ensure the NCP and the Mayor trust you and your team.& Score: 0
+TT:Should the local authorities  be kept in the loop about any difficulties that arise with the UAVs?
+Next:G& Option: No, the best thing is to keep any technical issues to yourself and your team.& Score: -4
+Next:G& Option: The best option is to handle the situation and inform the local authorities once the issue has been dealt with.& Score: -2
+Next:K& Option: Yes, the local authorities need to be informed about the situation as soon as possible, although it probably won’t look very good.& Score: 0
 
 ID:G
 Type: State
-TT:You start following the data streams and discussing the best entry-point for the UAVs into the auditorium building with the head of the local SAR team. Your phone starts ringing! The Mayor has learned that you have deployed the drones and is annoyed that you did not discuss the operation with her. She reminds you that her authorization is a non-negotiable requirement, yells that you should remember who is in charge of operations and hangs up abruptly after warning you that you had better bring the UAVs down immediately, especially considering the fact that they are clearly not up to scratch technically.
+TT:As you are following the data streams and discussing the best entry-point for the UAVs into the auditorium building with the head of the local SAR team, .your phone starts ringing. The Head of the local Civil Protection  has learned of the crash,  she is annoyed that you did let he know about  the collision nor inform her of the deployment. As she is hanging up she asks you to bring the drones down as soon as feasible, the technical issues that have emerged show that they cannot be relied upon
 Next:4& Option: NULL& Score: 0
 
 ID:4
 Type: Question
-TT:What to do now?
+TT:How should you react to the phone call?
 Next:H& Option: All you can do is tell the pilots to bring down the UAVs, pack up and leave.& Score: 0
-Next:I& Option: You tell your pilots to bring down the UAVs but as you start packing up you decide not to leave the operations area quite yet.& Score: 0 
+Next:I& Option: You tell your pilots to bring down the UAVs but as you start packing up you decide not to leave the operations area quite yet.& Score: 0
 
 ID:H
 Type: State
-TT:Clearly you have made a couple of serious judgment mistakes, it will take quite some effort to regain the Mayor's trust and re-establish yourself as a reliable partner.
+TT:You have made a couple of judgment mistakes; it will take quite some effort to gain the local authorities’  trust and -establish yourself as a reliable partner.
 
 ID:I
 Type: State
-TT:There may be other help you can give. Plus, you need to re-establish some kind of trust with the Mayor, simply leaving cannot be the right thing to do.
+TT:There may be other help you can give. Plus, you can't leave without talking directly with the Head of the local Civil Protection.
 Next:J& Option: NULL& Score: 0
 
 ID:J
 Type: State
-TT:You realize that by not being straightforward you have made everything much more complicated. You also think that decisions about what needs to be communicated immediately, what can wait and what does not need to be discussed cannot be made during operations, protocols should be clearly established beforehand. You decide to approach the Mayor as soon as the situation allows to see if you can make yourself and your team helpful. When you finally have the chance to talk to her, you explain your thinking to her. She is still annoyed and, you suspect, briefly considers whether she should be trusting you at all. But the UAVs can provide real support to the operations and the situation is such that all help available must be used. Shaking her head, wondering at her own decision, she tells you to go ahead and deploy your remaining UAVs without wasting any time; as she walk away she warns you that she wants to be updated regularly and that she will not tolerate any further lack of communication.
+TT:You realize that your mistakes  have made things  more complicated. You also think that decisions about what needs to be communicated immediately, what can wait and what does not need to be discussed cannot be made during operations, protocols should be established beforehand. You decide to approach the Head of the local Civil Protection as soon as the situation allows to see if you can make yourself and your team helpful. When you finally have the chance to talk to her, you explain your thinking to her. She is still annoyed but the UAVs can provide real support to the operations and the situation is such that all help available must be used. Shaking her head,  she tells you to go ahead and deploy your remaining UAVs without wasting any time; as she walks away she warns you that she wants to be updated regularly and that she will not tolerate any further lack of communication.
 Next:L& Option: NULL& Score: 0
 
 ID:K
 Type: State
-TT:With a broken rotor chances of being able to repair the damaged UAV within a reasonable time-frame are slim. You are not looking forward to informing the Mayor and local NCP officials of the accident and expect that they will greet the news with annoyance. When you finally manage to get a hold of them, you convey the news, trying to explain how this kind of event is to be expected and does not interfere with the overall usefulness of your team's work.  Surprisingly, both the Mayor and the NCP officials take the news in stride and seem to understand the situation. As you walk away, you have mixed feelings. Discussing the situation candidly may have actually improved your relationship and their trust in what the UAVs can achieve, but you wonder whether these hurried, pressure-filled conversations can convey what matters correctly
+TT:You are not looking forward to informing the local NCP officials of the accident, the news will just confirm their skeptical views about the drones. Plus, chances of being able to repair the damaged UAV within a reasonable amount of time are slim.  When you finally manage to talk to them, you tell them what happened trying to explain how this kind of event is to be expected and does not interfere with the overall usefulness of your team's work.  As you expected, the head of the Civil Protection does not seem surprised by the news of the crash and makes a few sarcastic remarks about new technology and how reliable it is.  You leave thinking that the only way to earn someone’s trust is for everything to go smoothly, and you wonder whether these hurried, pressure-filled conversations can ever convey what matters correctly.
 Next:L& Option: NULL& Score: 0
 
 ID:L
 Type: State
-TT:The rotor breakage is a major issue; you have five UAVs available and a large area to cover. 
+TT:Now that you have dealt with the Head of the local Civil Protection you can move on to thinking about how to go about the broken drone. It's a major problem, you  only have five UAVs available and the area to cover is large.
 Next:5& Option: NULL& Score: 0
 
 ID:5
 Type: Question
-TT:How should you handle the rotor breakage?
+TT:How should you handle the breakage?
 Next:M& Option: Prioritize repairs.& Score: 0
 Next:N& Option: Do without the broken UAV.& Score: 0
 
 ID:M
 Type: State
-TT:After considering the feasibility of repairs with the spare parts your team has brought along and the time it will take and talking it over with your senior pilot, you decide to attempt the repair yourself. You are not actively involved in the deployment and having this UAV is really important to operations, you at least should try.
+TT:After considering the feasibility of repairs with the spare parts your team has brought along and the time it will take, and talking it over with your senior pilot, you decide to attempt the repair yourself and soon realize you'll be able to handle the problem before too long. Having settled the matter, you realize that during your last conversation with the local Civil Protection official you forgot to bring up something important, the local population needs to be informed that drones are being used in the rescue operations. Involving the local community is key to prevent any fake news circulating and to ensure that local people’s needs are being met.
 Next:6& Option: NULL& Score: 0
 
 ID:N
 Type: State
-TT:After considering the feasibility of repairs with the spare parts your team has brought along, the time it will take and whether the repair is likely to hold, you decide to do without the broken UAV.
+TT:After considering the feasibility of repairs with the spare parts your team has brought along, the time it will take and whether the repair is likely to hold, you decide to do without the broken UAV. Having settled the matter, you realize that during your last conversation with the local Civil Protection official you forgot to bring up something important, the local population needs to be informed that drones are being used in the rescue operations. Involving the local community is key to prevent any fake news circulating and to ensure that local people’s needs are being met.
 Next:6& Option: NULL& Score: 0
 
 ID:O
 Type: State
-TT:The Mayor moves away from the local officials and approaches you; finally, you have the chance to talk to her. You tell her that you are ready to deploy your fleet of UAVs, explaining that you have probably already identified a viable entry-point into the school auditorium and that with her authorization you can start your missions right away. She looks you over skeptically and it dawns on you that she may refuse permission. Then something distracts her, she waves to someone behind you and tells you to go ahead.
-Next:6& Option: NULL& Score: 0 
+TT:While the Mayor keeps on talking with the Red Cross officers, the Head of the local Civil Protection walks towards you. You tell her that you are ready to deploy your UAVs, explaining that you have probably already identified a viable entry-point into the school auditorium and that you can start your missions right away. She looks you over skeptically. Then something distracts her, she waves to someone behind you and tells you to go ahead. As she is leaving you realize that you should have mentioned something: the population needs to be informed about the fact that UAVs will be used to assist rescue operations. Community engagement is important to prevent rumors and fake news spreading and ensure community needs are supported.
+Next:6& Option: NULL& Score: 0
 
 ID:6
 Type: Question
-TT:It occurs to you that you forgot to bring up something important! The population needs to be informed about the fact that UAVs will be used to assist rescue operations. Community engagement is key to prevent rumors and ensure community needs are supported. Should you mention the issue now, despite the fact that the Mayor already has so much on her hands?
-Next:P& Option: No, the Mayor is surely well aware of her community's needs and priorities, she can take care of this if and when she sees fit.& Score: -4
-Next:P& Option: Engaging with the community is important but this conversation can wait.& Score: -2
-Next:R& Option: As the UAV expert it is your job to raise this kind of problems, you don't know whether the Mayor has any experience to draw from in this situation and should be made aware of the issue.& Score: 0
+TT:Should you mention the issue now, despite the fact that the Head of the local Civil Protection  already has so much on her hands?
+Next:P& Option: No, she  is the person who is best placed to think about her community's needs and priorities.& Score: -4
+Next:P& Option: Informing and engaging with the community is important but this conversation can wait.& Score: -2
+Next:R1& Option: As the UAV expert it is your job to raise this kind of problems.& Score: 0
 
 ID:P
 Type: State
-TT:The deployment proceeds smoothly and soon the UAVs are aloft. You and your team have been training for months and this is the first opportunity you have to finally use the UAVs in a real-life disaster situation. Although you are confident that the data the UAVs are already collecting will prove precious, you are aware that if anything goes wrong there will be significant push-back.  At the national level, the SAR community has been hesitant about adopting new technologies, sometimes owing to negative experiences when collaborating with amateur UAV operators. Your reputation as an UAV expert and, to some extent, the future of UAVs in SAR in your country for the foreseeable future are on the line today.
+TT:The deployment starts  smoothly and soon the UAVs are aloft. You and your team have been training for months and this is the first opportunity you have to finally use the UAVs in a real-life disaster situation. Although you are confident that the data the UAVs are already collecting will prove precious, you are aware that if anything goes wrong there will be significant push-back.  At the national level, the SAR community has been hesitant about adopting new technologies, sometimes owing to negative experiences when collaborating with amateur UAV operators. You suspect that they probably also have an axe to grind because of the amount of public funding that has been recently directed towards developing search and rescue robots instead of towards strengthening Civil Protection  systems and hiring more human SAR professionals.
 Next:Q& Option: NULL& Score: 0
 
 ID:Q
 Type: State
-TT:Complaints arrive to the Mayor from community representatives about the UAVs. Stories have appeared on social media about the UAVs being used to collect information without the population knowing. Local officials resent not being told about the purpose of the UAV missions, with whom any data will be shared, how it will be used, and how long this data will be retained. The Mayor halts UAV operations, your relationship with her is damaged and so is your reputation.
+TT:Complaints arrive to the Mayor from community representatives about the UAVs. Stories have appeared on social media about the UAVs being used to collect information about people without the population knowing. The news has quickly generated widespread suspicion about the drones and local officials resent not being told about the purpose of the UAV missions, what kind of information is being gathered and who controls it. The Mayor announces that the  UAV operations will be interrupted and your , relationship with the local authorities, as well as your reputation, is damaged.
 
-ID:R
+ID:R1
 Type: State
-TT:You tell the Mayor you would like to cooperate with her and the Emergency Command Center to publicize your UAV missions, their purpose and some of the proposed flight plans. She informs the police so they are aware of the project and can assist with safety and information dissemination. You ask the Mayor for guidance on how to reach out to local media and schedule a public meeting with various civil society groups to present your mission, maybe briefly demo your technology and display examples of aerial imagery. The Mayor then uses the national information and alert SMS system to inform the local population that UAV operations have been authorized and will soon be under way. She tells you her press office will also issue a press release.
+TT:You ask the head of the local Civil Protection to put you in touch with the press office at the town hall. You want the Mayor to make a statement and a press release to be issued to announce and shortly describe the UAV missions and their purpose. You also suggest that a public meeting be organized with various civil society groups to present your mission, maybe briefly demo your technology and display examples of aerial imagery. The Press Office agrees, confirming that they will issue a press release and will schedule the meeting. They will also use the  national information and alert SMS system to inform the local population that UAV operations have been authorized and will soon be under way.
+Next:R2& Option: NULL& Score: 0
+
+ID:R2
+Type: State
+TT:There is one thing that you need to convey to the press office. The press release needs to avoid any hype and the information shared with the media should describe what the drones can and can’t do. On the other hand, though, this is the first time your work will be in the national press, this type of visibility doesn’t happen every day and it’s a great opportunity to make your work and the potential of drones in rescue operations known to the wider public. A little enthusiasm can do no harm, can it?
 Next:7& Option: NULL& Score: 0
 
 ID:7
 Type: Question
-TT:The Mayor is now talking to other people and you are keenly aware that you have already taken up a lot of her time and that you need to get back to your team. Still, you are concerned that unless her press release is carefully put together, the media may misrepresent the UAV's actual role and people may thus have excessive expectations as to what they can realistically do. Do you insist and talk to her now or wait until the next opportunity comes?
-Next:S& Option: No, you trust she will have understood what you are doing and can handle things appropriately.& Score: -4
-Next:S& Option: You make your point quickly, hoping she will realize that she needs to avoid any hype.& Score: -2 
-Next:W& Option: Yes, clearly explaining the issue.& Score: 0
+TT:You are unsure of what to do: should you explicitly tell the Press Office to avoid any hype?
+Next:S& Option: You decide not to mention it.& Score: -4
+Next:S& Option: You make your point quickly.& Score: -2
+Next:W& Option: You tell the press office they need to explain the drones' potential as well as their limitations and explain what you mean.& Score: 0
 
 ID:S
 Type: State
-TT:The Mayor issues an inaccurate press release that overemphasizes the UAVs' role within search and rescue operations and largely misrepresents what the UAVs can and cannot do. You are well aware, from stories you have heard from colleagues who had to deal with similar situations, that excessive expectations generally lead to disappointment and, eventually, mistrust.
+TT:The Press Office's press release and the Mayor's statement are inaccurate and  largely overemphasizes the UAVs' role within search and rescue operations. The news is picked up by a number of media outlets and you are worried that this type of information will generate excessive expectations in the population.
 Next:T& Option: NULL& Score: 0
 
 ID:T
 Type: State
-TT:The press release generates significant embarrassment among your team and colleagues. It is difficult to go back to the media with a statement that would largely contradict what the Mayor said. Eventually complaints arrive to the Mayor from community representatives about the UAVs interfering with the work of rescue teams and not delivering on their promise. The Mayor halts UAV operations and the reputation of your work is damaged.
+TT:The press release and the Mayor's statement generate significant embarrassment among your team and colleagues. It is difficult to go back to the media with a statement that would largely contradict what the Mayor said. Eventually complaints arrive to the Mayor from community representatives about the UAVs interfering with the work of rescue teams and not delivering on their promise. The Mayor halts UAV operations and the reputation of your work is damaged.
 Next:8& Option: NULL& Score: 0
 
 ID:8
 Type: Question
-TT:You are now in the difficult position of having to decide how to react to the misinformation that the Mayor and the media have circulated. How should you move forward?
-Next:U& Option: You really have no alternative but to pack up and leave. You need to set the record straight but now is not the time. You are upset and not thinking clearly.& Score: 0
-Next:V& Option: You really have no alternative but to pack up and leave. But you must set the record straight about the inaccurate information. You consider contacting your friend who is a journalist to discuss the best way to handle the problem.& Score: 0
+TT:You are now in the difficult position of having to decide how to react to the misinformation that the Mayor and the press office  have circulated. How should you move forward?
+Next:U& Option: You really have no alternative but to pack up and leave. You need to set the record straight but now is not the time.& Score: 0
+Next:V& Option: You really have no alternative but to pack up and leave. But you must set the record straight about the inaccurate information. You consider contacting the Press Office to discuss the best way to handle the problem.& Score: 0
 
-ID:X
+ID:U
 Type: State
-TT:The local population is correctly informed of what the UAVs will be doing. Operations can safely continue, and your reputation is preserved.
+TT:You are tired and disappointed. You knew that unrealistic expectations could be a major problem and now because of the hype you are leaving operations.
+
+ID:V
+Type: State
+TT:You are tired and disappointed. You knew that unrealistic expectations could be a major problem and now because of the hype you are leaving operations. You will get in touch with the Press Office later. Right now all you need is to get home.
 
 ID:W
 Type: State
-TT:The Mayor issues an accurate press release that correctly illustrates the UAVs' role within SAR operations, briefly describing the kind of support they are able to provide to rescue operations. Her tone is encouraging and positive but not overly emphatic or enthusiastic.
+TT:The Mayor's statement and the press release are accurate and  correctly describe  the UAVs' role within SAR operations, briefly describing the kind of support they are able to provide to rescue operations. The  tone is encouraging and positive but not overly emphatic or enthusiastic.
 Next:X& Option: NULL& Score: 0
+
+ID:X
+Type: State
+TT:The local population is correctly informed of what the UAVs will be doing. Operations can safely continue, and your team’s and your own reputation are strengthened.
+
 
