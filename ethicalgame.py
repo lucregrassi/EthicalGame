@@ -2,6 +2,8 @@ from tkinter import *
 from PIL import ImageTk, Image
 import pygame
 import time
+import os
+import sys
 
 timeout = 120
 
@@ -21,6 +23,10 @@ running = True
 prev_image = ""
 prev_song = ""
 
+# To create executable
+# executable_path = os.path.dirname(sys.executable)
+# english_file = os.path.join(executable_path, 'ethicalgame_en.txt')
+# italian_file = os.path.join(executable_path, 'ethicalgame_it.txt')
 
 with open("ethicalgame_en.txt") as fp:
     for line in fp:
@@ -49,10 +55,15 @@ score.pop(0)
 state = 0
 ok = True
 
+button_en = "Continue"
+button_it = "Continua"
+title_it = "Simulazione Interattiva Testuale – Terremoto a Namila"
+title_en = "Interactive Text Simulation - Earthquake in Namila"
 root = Tk()
 w, h = root.winfo_screenwidth(), root.winfo_screenheight()
 root.geometry("%dx%d+0+0" % (w, h))
-root.title("Simulazione Interattiva Testuale – Terremoto a Namila")
+root.title(title_en)
+# icon_path = os.path.join(executable_path, 'icon.ico')
 root.iconbitmap("icon.ico")
 pygame.mixer.init()
 
@@ -70,16 +81,14 @@ first_time = True
 
 while ok:
     if first_time:
-        title_it = "Simulazione Interattiva Testuale – Terremoto a Namila"
-        title_en = "Interactive Text Simulation - Earthquake in Namila"
         intro_widget = Label(top_frame, text=title_en, font=(None, 20, 'bold'))
         intro_widget.pack(padx=20, pady=(80, 10))
 
         guide_en = "The interactive text simulation you are about to read includes short texts followed by questions." \
-                   "The aim of this simulation is to encourage those who work with search and rescue drones in disaster" \
-                   "operations, whether researchers or pilots, to reflect on the ethical issues that can emerge in " \
-                   "connection with their deployment. The problems presented are actual issues that are described in " \
-                   "the literature.\n\n" \
+                   "The aim of this simulation is to encourage those who work with search and rescue drones in " \
+                   "disaster operations, whether researchers or pilots, to reflect on the ethical issues that can " \
+                   "emerge in connection with their deployment. The problems presented are actual issues that are " \
+                   "described in the literature.\n\n" \
                    "Some useful information:\n" \
                    "1. The story unfolds differently depending on how you answer the questions.\n" \
                    "2. New text appears under the dashed line.\n" \
@@ -112,7 +121,7 @@ while ok:
         txt_widg.pack(side=TOP, padx=(30, 20), pady=(30, 40))
 
         var = IntVar()
-        button = Button(bottom_frame, text="Continua", padx=10, command=lambda: var.set(1), font=(None, 16), bg="#62cf38")
+        button = Button(bottom_frame, text=button_en, padx=10, command=lambda: var.set(1), font=(None, 16))
         button.config(height=2, width=5)
         button.pack(side=TOP, pady=40)
 
@@ -148,6 +157,7 @@ while ok:
         text_widget.yview_pickplace("end")
         text_widget.pack(side=LEFT, anchor=NW, padx=(0, 20), pady=30)
         try:
+            # img_folder = os.path.join(executable_path, 'images/')
             original_image = Image.open("images/" + id[state] + ".jpg")
             prev_image = Image.open("images/" + id[state] + ".jpg")
         except:
@@ -156,7 +166,6 @@ while ok:
         final_image = ImageTk.PhotoImage(resized_image)
         img_label = Label(top_frame, image=final_image)
         img_label.pack(side=LEFT, anchor=NE, pady=(55, 0), padx=(0, 30))
-
 
         if len(option[state]) == 0:
             break
@@ -201,7 +210,7 @@ while ok:
                         rb.pack(side=TOP, anchor=NW)
 
         var = IntVar()
-        continue_button = Button(bottom_frame, text="Continua", padx=10, command=lambda: var.set(1),
+        continue_button = Button(bottom_frame, text=button_en, padx=10, command=lambda: var.set(1),
                                  font=(None, 16))
         continue_button.config(height=2, width=5)
         continue_button.pack(side=TOP, pady=30)
@@ -237,14 +246,18 @@ while ok:
         for rb in radio_buttons:
             rb.destroy()
 
-finished_msg = "Gioco completato! Il tuo punteggio è: " + str(my_score)
+finished_msg_en = "Game completed! Your score is: "
+finished_msg_it = "Gioco completato! Il tuo punteggio è: "
+finished_msg = finished_msg_en + str(my_score)
 finished = Label(bottom_frame, text=finished_msg, font=(None, 16))
 finished.pack(padx=20, pady=(40, 10))
 print("\n" + finished_msg + "\n")
 
 print("Time for each state: ", times)
 print("Total time: ", tot_time)
-quit_button = Button(bottom_frame, text="Esci", command=root.quit, font=(None, 16), bg="#62cf38")
+exit_button_en = "Exit"
+exit_button_it = "Esci"
+quit_button = Button(bottom_frame, text=exit_button_en, command=root.quit, font=(None, 16))
 quit_button.config(height=2, width=5)
 quit_button.pack(padx=10, pady=20)
 

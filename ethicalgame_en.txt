@@ -31,7 +31,7 @@ Next:D1& Option: NULL& Score: 0
 
 ID:D1
 Type: State
-TT:You set the question aside for the time being, and as you stand next to your truck, a Civil Protection  car pulls up. A woman and a man step out, you know they are the town Mayor and the local Head of the Civil Protection. r. The woman looks around quickly, sees  a group of Red Cross officers and, with the Head of Civil Protection, starts walking in their direction. You follow them, you need to discuss your team’s operations. As you approach them you hear that they are starting to discuss  how to coordinate the rescue efforts. Suddenly, you see a man running towards you. When he stops, as he catches his breath, he says that the auditorium is full of children. Apparently about thirty  kids and three teachers are trapped underneath what is left of the school auditorium off  the main town square nearby.  In the confusion that ensues you try to get the Mayor's attention to let he know that you have all the proper authorizations in place and are ready to  deploythe UAVs. You hope that she or the Head of the Civil Protection will have recognized you from the  technical meetings organized by Civil Protection, but when  you finally catch her eye, she signals she has no time right now. As she continues talking to the local officials, you consider what to do.
+TT:You set the question aside for the time being, and as you stand next to your truck, a Civil Protection  car pulls up. A woman and a man step out, you know they are the town Mayor and the local Head of the Civil Protection. r. The woman looks around quickly, sees  a group of Red Cross officers and, with the Head of Civil Protection, starts walking in their direction. You follow them, you need to discuss your team’s operations. As you approach them you hear that they are starting to discuss  how to coordinate the rescue efforts. Suddenly, you see a man running towards you. When he stops, as he catches his breath, he says that the auditorium is full of children. Apparently about thirty  kids and three teachers are trapped underneath what is left of the school auditorium off  the main town square nearby.  In the confusion that ensues you try to get the Mayor's attention to let he knhave all the proper authorizations in place and are ready to  deploythe UAVs. You hope that she or the Head of the Civil Protection will have recognized you from the  technical meetings organized by Civil Protection, but when  you finally catch her eye, she signals she has no time right now. As she continues talking to the local officials, you consider what to do.
 Next:D2& Option: NULL& Score: 0
 
 ID:D2
@@ -76,7 +76,7 @@ Next:I& Option: You tell your pilots to bring down the UAVs but as you start pac
 
 ID:H
 Type: State
-TT:You have made a couple of judgment mistakes; it will take quite some effort to gain the local authorities’  trust and -establish yourself as a reliable partner.
+TT:You have made a couple of judgment mistakes; it will take quite some effort to gain the local authorities' trust and -establish yourself as a reliable partner.
 
 ID:I
 Type: State
